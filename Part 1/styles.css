@@ -1,0 +1,73 @@
+
+        h1{
+            text-align: center;
+            text-size-adjust: 20px;
+        }
+        sub{
+            font-style: italic;
+        }
+        img {
+            /* width: 300px;
+            height: 150px; */
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            object-position: top;
+            opacity: 0.8;
+        }
+        .table1{
+            border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    background-origin: content-box;
+    border-collapse:collapse;
+    border-spacing: 25px;    
+        }
+        .table1 th{
+            font-size: 1.5em;
+        }
+        .table1 th,
+        .table1 td{
+            padding: 12px 15px;
+        }
+        .table1 tbody tr{
+            border-bottom: 1px solid rgb(152, 151, 151);
+        }
+        button{
+            text-size-adjust: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+            align-content: center;
+        }
+        button:hover{
+            opacity: 0.8; 
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 5px -5px grey;
+            border: 1px solid gray;
+        }
+        input{
+            width: 400px;
+            height: 50px;
+            border-radius: 15px;
+        }
+        .reset{
+            text-size-adjust: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            align-content: center;
+        }
+        label{
+            font-size: 1.2em;
+        }
+        .Ast{
+            color: red;
+        }
+
+    

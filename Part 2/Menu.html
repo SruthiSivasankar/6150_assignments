@@ -5,34 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <style>
-        table{
-            border: 2px;
-        }
-        img{
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-        }
-        button{
-            text-size-adjust: 30px;
-            width: 200px;
-            height: 50px;
-            background-color: red;
-            color: white;
-            border-radius: 15px;
-            align-content: center;
-        }
-        button:hover{
-            opacity: 0.8; 
-            cursor: pointer;
-            border-radius: 15px;
-            border: 1px solid gray;
-    </style>
+    <link rel ="shortcut icon" type="image/png" href="Pictures/Coffee fevicon.png">
+    <link rel="stylesheet" href="styles1.css" type="text/css">
+
 </head>
 <body>
     <header>Barista Coffee House</header><h1>Our Menu</h1>
-    <table>
+    <table class="Add-ons">
         <tr>
             <th>
                 Name
@@ -45,32 +24,32 @@
             </th>
         </tr>
         <tr>
-            <td>Cappucino <br> <img src="Pictures/cappuccino.jpg" alt ="Cappucino" ></td>
+            <td>Cappucino <br> <img src="Pictures/cappuccino.jpg" alt ="Cappucino" width="300px" height="300px"></td>
             <td>3.00$<input type="number" name="add" id="add" min="0"></td>
             <td>4.00$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
-            <td>Espresso <br><img src="Pictures/Espresso.jpeg" alt ="Espresso" ></td>
+            <td>Espresso <br><img src="Pictures/Espresso.jpeg" alt ="Espresso" width="300px" height="300px"></td>
             <td>3.00$<input type="number" name="add" id="add" min="0"></td>
             <td>4.00$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
-            <td>Mocha Latte <br><img src="Pictures/mocha latte.jpeg" alt ="Mocha Latte" ></td>
+            <td>Mocha Latte <br><img src="Pictures/mocha latte.jpeg" alt ="Mocha Latte" width="300px" height="300px" ></td>
             <td>3.50$<input type="number" name="add" id="add" min="0"></td>
             <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
-            <td>Classic Irish Coffee <br><img src="Pictures/Classic-Irish-Coffee-5.jpg" alt ="Classic Irish Coffee" ></td>
+            <td>Classic Irish Coffee <br><img src="Pictures/Classic-Irish-Coffee-5.jpg" alt ="Classic Irish Coffee" width="300px" height="300px"></td>
             <td>3.50$<input type="number" name="add" id="add" min="0"></td>
             <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
-            <td>Frappe<br> <img src="Pictures/frappe.jpeg" alt ="Frappe" ></td>
+            <td>Frappe<br> <img src="Pictures/frappe.jpeg" alt ="Frappe" width="300px" height="300px"></td>
             <td>3.50$<input type="number" name="add" id="add" min="0"></td>
             <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
     </table>
-    <table>
+    <table class="Add-ons">
     <tr>
         <th>
             Name
@@ -82,7 +61,7 @@
             Large
         </th>
     </tr>
-        <p>Add ons:</p>
+        <h2>Add ons:</h2>
         <tr>
         <td>Milk ----</td>
             <td>1.50$<input type="checkbox" name="add" id="add"></td>

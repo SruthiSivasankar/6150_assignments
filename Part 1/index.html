@@ -9,61 +9,9 @@
     <title>Boston Tourism
     </title>
 
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
     
-
-    <style>
-        h1{
-            text-align: center;
-            text-size-adjust: 20px;
-        }
-        sub{
-            font-style: italic;
-        }
-        .Photos {
-            width: 900px;
-            height: 450px;
-            object-fit: cover;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            object-position: top;
-            opacity: 0.8;
-
-        }
-        img {
-            width: 300px;
-            height: 150px;
-            object-fit: cover;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            object-position: top;
-            opacity: 0.8;
-        }
-        table{
-            border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    background-origin: content-box;
-    border-collapse:separate;
-    border-spacing: 25px;
-        }
-        button{
-            text-size-adjust: 30px;
-            width: 200px;
-            height: 50px;
-            background-color: red;
-            color: white;
-            border-radius: 15px;
-            align-content: center;
-        }
-        button:hover{
-            opacity: 0.8; 
-            cursor: pointer;
-            border-radius: 15px;
-            box-shadow: 5px -5px grey;
-            border: 1px solid gray;
-        }
-    </style>
 </head>
 <body>
     <div>
@@ -71,12 +19,26 @@
     </div>
     <div class = "Photos">
        <!-- <a href = "Photos/Boston.jpeg"> -->
-            <img src = "Photos/Boston.jpeg" alt = "Boston"  width="900px" height="450px"/>
+            <img src = "Photos/Boston.jpeg" alt = "Boston"  width="1000px" height="500px"/>
+
         <!-- </a> -->
     </div>
-    <h2> Here is our 3 days Itinerary </h2>
     <div>
-        <table>
+    <h2> Boston Is Always In Season</h2>
+    <p>
+        It’s no secret Boston is rich with history. 
+        From the American Revolution to the site of the very first public school, it’s a city with stories to tell.<br><br>
+        Boston is best known for its famous baked beans, Fenway Park, The Boston Marathon, and of course for the bar from Cheers, 
+        but dig a little deeper below the surface and you’ll find a surprising wealth of things that make Boston one of the best cities in America—and the world.<br><br>
+        It is known as " A City of Firsts" for its  Innovation Galore, Healthy Hearts and Minds, Green (and Blue) Space, Quality of Life, Cultural Attractions<br><br>
+        Not just that- Boston is All About Learning, Boston is North Bennet Street School.<br><br>
+        Come Visit and Find out why!
+    </p>
+    </div>
+
+    <h3> Here is our 3 days Itinerary </h3>
+    <div>
+        <table class="table1">
             <tr>
                 <th>
                     Day 
@@ -88,8 +50,8 @@
                 <tr>
                     <td>
                         Day 1 : <a href="https://www.thefreedomtrail.org/" target="_blank">Freedom trail </a>
-                        <a href = "Photos/freedom trail.jpeg">
-                            <img src = "Photos/freedom trail.jpeg" alt = "Freedom" >
+                        <!-- <a href = "Photos/freedom trail.jpeg"> -->
+                            <img src = "Photos/freedom trail.jpeg" alt = "Freedom" width="400px" height="250px"/>
                         </a>    
                     </td>
                     <td>
@@ -102,8 +64,8 @@
                 <tr>
                     <td>
                         Day 2: <a href="https://www.boston.gov/neighborhoods" target="_blank">Boston’s Neighborhoods </a>
-                        <a href = "Photos/fenway park.jpeg">
-                            <img src = "Photos/fenway park.jpeg" alt = "Fenway" >
+                        <!-- <a href = "Photos/fenway park.jpeg"> -->
+                            <img src = "Photos/fenway park.jpeg" alt = "Fenway" width="400px" height="250px"/>
                         </a>    
                     </td>
                     <td>
@@ -116,7 +78,7 @@
                     <td>
                         Day 3: <a href="https://www.cambridgeusa.org/" target="_blank"> Cambridge </a> 
                         <!-- <a href = "Photos/cambridge.jpeg"> -->
-                            <img src = "Photos/cambridge.jpeg" alt = "Cambridge" width="30px">
+                            <img src = "Photos/cambridge.jpeg" alt = "Cambridge" width="400px" height="250px"/>
                         <!-- </a>     -->
                     </td>
                     <td>
@@ -127,8 +89,11 @@
                     </td>
                 </tr>
         </table>
-    </div>
-    <div> <p> Liked our Itinerary and would like to discuss more on different Itinerary?</p></div>
+    </div><br><br>
+    <div> <p> Liked our Itinerary ?<br>
+        Yes<input type="radio" name="census" id="yes"><br>
+        No!<input type="radio" name="census" id="no"><br><br><br>
+        Would you like to check out on different Itinerary or discuss more ?</p></div>
     <p>
         <a href = "register.html" target="_blank"><button>SIGN IN</button></a>
     </p>

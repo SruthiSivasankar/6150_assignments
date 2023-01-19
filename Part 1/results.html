@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
+    <link rel ="shortcut icon" type="image/png" href="Photos/Boston fevicon.png">
+    <style>
+        p{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+
+
 </head>
 <body>
     <div id ="results"></div>
-    <a href = "register.html">Back to Form</a>
-    <script>
-        const resultsList = document.getElementById('results')
-        new URLSearchParams(window.location.search).forEach((value,name) => { 
-            resultsList.append(value)
-            resultsList.append(document.createElement('br'))
-        })
-    </script>
+    <p>
+         Thanks for registering!  We will contact you soon.
+    </p>
+    <p class= "return">
+    <a  href = "register.html"><span >Back to Form</span></a>
+</p>
     
 </body>
 </html>

@@ -1,0 +1,70 @@
+h1{
+    /* text-align: center; */
+    text-size-adjust: 20px;
+}
+header{
+    background-color: gray;
+    color: white;
+    padding: 15px;
+}
+footer{
+    background-color: gray;
+    color: white;
+}
+img{
+    /* width: 960px;
+    height: 450px; */
+    object-fit: cover;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    object-position:center;
+}
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    text-size-adjust: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    align-content: center;
+}
+button:hover{
+    opacity: 0.8; 
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Sub-text{
+    font-size: 1.2em;
+    font-style: italic;
+}
+.Add-ons{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+.Add-ons tr{
+    text-align: left;
+}
+.Add-ons th{
+    background-color: gray;
+    font-size: 1.5em;
+}
+.Add-ons th, 
+.Add-ons td{
+    padding: 12px 15px;
+}
+.Add-ons tbody tr{
+    border-bottom: 1.5px solid gray; 
+}
+table {
+    border-bottom: 2px solid black;
+}

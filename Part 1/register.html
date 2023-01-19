@@ -5,52 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <style>
-        button{
-            text-size-adjust: 30px;
-            width: 200px;
-            height: 50px;
-            background-color: red;
-            color: white;
-            border-radius: 15px;
-            align-content: center;
-        }
-        button:hover{
-            opacity: 0.8; 
-            cursor: pointer;
-            border-radius: 15px;
-            border: 1px solid gray;
-        }
-        input{
-            height: 50px;
-            border-radius: 15px;
-        }
-        .button reset{
-            text-size-adjust: 30px;
-            width: 200px;
-            height: 50px;
-            background-color: grey;
-            color: white;
-            border-radius: 15px;
-            align-content: center;
-        }
-    </style>
+    <link rel ="shortcut icon" type="image/png" href="Photos/Boston fevicon.png">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
 </head>
 <body>
     <h1>SIGN IN HERE!</h1>
     <div>
         <form action="results.html" method="get">
-            <label for ="name">Name:<span>&#42;</span></label>
-            <input type="text" name="name" id="name" placeholder="username" required><br>
-            <label >Email<span>&#42;</span>:
-            <input type="email" name="email" id="email" required></label><br>
-            <label>Create Password<span>&#42;</span>:
-            <input type="password" name="password" required></label><br>
-            <label>Confirm Password<span>&#42;</span>:
-            <input type="password" name="password" required></label><br>
+            <label for ="name">Name:<span class="Ast">&#42;</span></label><br><br>
+            <input type="text" name="name" id="name" placeholder="User Name" required><br><br>
+
+            <label >Email:<span class="Ast">&#42;</span><br><br>
+            <input type="email" name="email" id="email" required></label><br><br>
+
+            <label>Create Password:<span class="Ast">&#42;</span><br><br>
+            <input type="password" name="password" required></label><br><br>
+
+            <label>Confirm Password:<span class="Ast">&#42;</span><br><br>
+            <input type="password" name="password" required></label><br><br>
+
+            <label for="phone"> Phone Number:<span class="Ast">&#42;</span></label><br><br>
+            <input type="tel" name="phone" id="phone" required><br><br><br>
     </div>
     <div>
-        <button class = "reset" type="reset">Reset</button>
+        <button class = "reset" type="reset">RESET</button>
         <button type="submit">SUBMIT</button>
     </div>
 </form>
