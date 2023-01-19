@@ -14,6 +14,20 @@
             height: 300px;
             object-fit: cover;
         }
+        button{
+            text-size-adjust: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+            align-content: center;
+        }
+        button:hover{
+            opacity: 0.8; 
+            cursor: pointer;
+            border-radius: 15px;
+            border: 1px solid gray;
     </style>
 </head>
 <body>
@@ -32,28 +46,28 @@
         </tr>
         <tr>
             <td>Cappucino <br> <img src="Pictures/cappuccino.jpg" alt ="Cappucino" ></td>
-            <td>3.00$</td>
-            <td>4.00$</td>
+            <td>3.00$<input type="number" name="add" id="add" min="0"></td>
+            <td>4.00$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
             <td>Espresso <br><img src="Pictures/Espresso.jpeg" alt ="Espresso" ></td>
-            <td>3.00$</td>
-            <td>4.00$</td>
+            <td>3.00$<input type="number" name="add" id="add" min="0"></td>
+            <td>4.00$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
             <td>Mocha Latte <br><img src="Pictures/mocha latte.jpeg" alt ="Mocha Latte" ></td>
-            <td>3.50$</td>
-            <td>4.50$</td>
+            <td>3.50$<input type="number" name="add" id="add" min="0"></td>
+            <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
             <td>Classic Irish Coffee <br><img src="Pictures/Classic-Irish-Coffee-5.jpg" alt ="Classic Irish Coffee" ></td>
-            <td>3.50$</td>
-            <td>4.50$</td>
+            <td>3.50$<input type="number" name="add" id="add" min="0"></td>
+            <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
         <tr>
             <td>Frappe<br> <img src="Pictures/frappe.jpeg" alt ="Frappe" ></td>
-            <td>3.50$</td>
-            <td>4.50$</td>
+            <td>3.50$<input type="number" name="add" id="add" min="0"></td>
+            <td>4.50$<input type="number" name="add" id="add" min="0"></td>
         </tr>
     </table>
     <table>
@@ -71,36 +85,40 @@
         <p>Add ons:</p>
         <tr>
         <td>Milk ----</td>
-            <td>1.50$</td>
-            <td>2.50$</td>
+            <td>1.50$<input type="checkbox" name="add" id="add"></td>
+            <td>2.50$<input type="checkbox" name="add" id="add"></td>
         </tr>
         <tr>
             <td>Coconut Milk ----</td>
-            <td>2.00$</td>
-            <td>3.00$</td>
+            <td>2.00$<input type="checkbox" name="add" id="add"></td>
+            <td>3.00$<input type="checkbox" name="add" id="add"></td>
         </tr>
         <tr>
             <td>Almond Milk ----</td>
-            <td>2.00$</td>
-            <td>3.00$</td>
+            <td>2.00$<input type="checkbox" name="add" id="add"></td>
+            <td>3.00$<input type="checkbox" name="add" id="add"></td>
         </tr>
 
         <tr>
             <td>Mapple Syrup----</td>
-            <td>2.50$</td>
-            <td>3.50$</td>
+            <td>2.50$<input type="checkbox" name="add" id="add"></td>
+            <td>3.50$<input type="checkbox" name="add" id="add"></td>
         </tr>
          <tr>
             <td>Whipped Cream ----</td>
-            <td>2.50$</td>
-            <td>3.50$</td>
+            <td>2.50$<input type="checkbox" name="add" id="add"></td>
+            <td>3.50$<input type="checkbox" name="add" id="add"></td>
         </tr>
         <tr>
             <td>Cocoa Powder ----</td>
-            <td>2.50$</td>
-            <td>3.50$</td>
+            <td>2.50$<input type="checkbox" name="add" id="add"></td>
+            <td>3.50$<input type="checkbox" name="add" id="add"></td>
         </tr>
     </table>
+    <div>
+        <a href="order.html"><button>Place Order</button></a>
+    </div><br>
+    
     <footer> Copyright <span>&#169;</span> 2023 Barista Coffee House</footer>
 </body>
 </html>

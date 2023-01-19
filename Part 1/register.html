@@ -19,12 +19,20 @@
             opacity: 0.8; 
             cursor: pointer;
             border-radius: 15px;
-            box-shadow: 5px -5px grey;
             border: 1px solid gray;
         }
         input{
             height: 50px;
             border-radius: 15px;
+        }
+        .button reset{
+            text-size-adjust: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            align-content: center;
         }
     </style>
 </head>
@@ -34,15 +42,15 @@
         <form action="results.html" method="get">
             <label for ="name">Name:<span>&#42;</span></label>
             <input type="text" name="name" id="name" placeholder="username" required><br>
-            <label>Email<span>&#42;</span>:
-            <input type="email" name="Email"required></label><br>
+            <label >Email<span>&#42;</span>:
+            <input type="email" name="email" id="email" required></label><br>
             <label>Create Password<span>&#42;</span>:
             <input type="password" name="password" required></label><br>
             <label>Confirm Password<span>&#42;</span>:
             <input type="password" name="password" required></label><br>
     </div>
     <div>
-        <button type="reset">Reset</button>
+        <button class = "reset" type="reset">Reset</button>
         <button type="submit">SUBMIT</button>
     </div>
 </form>

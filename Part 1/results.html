@@ -8,13 +8,13 @@
 </head>
 <body>
     <div id ="results"></div>
-    <a href = "/">Back to Form</a>
+    <a href = "register.html">Back to Form</a>
     <script>
         const resultsList = document.getElementById('results')
-        new URLSearchParams(window.location.search).forEach(value,name) => { 
-            resultsList.append('${name}: ${value}')
+        new URLSearchParams(window.location.search).forEach((value,name) => { 
+            resultsList.append(value)
             resultsList.append(document.createElement('br'))
-        }
+        })
     </script>
     
 </body>
