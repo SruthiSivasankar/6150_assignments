@@ -540,9 +540,9 @@ selection.addEventListener('change', () => {
     newCell = newRow.insertCell(14);
     newText = document.createTextNode(anyAddition.value);
     newCell.appendChild(newText);
-    newCell = newRow.insertCell(15);
-    newText = document.createTextNode(option.value);
-    newCell.appendChild(newText);
+    // newCell = newRow.insertCell(15);
+    // newText = document.createTextNode(option.value);
+    // newCell.appendChild(newText);
     
     myForm.reset();
     selectedTitle = "";
