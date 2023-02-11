@@ -128,18 +128,22 @@
 function handleCheckboxChange(checkbox) {
     var textFieldContainer = document.getElementById("textFieldContainer");
     if (checkbox.checked) {
+     var br=document.createElement("br");
       var textField = document.createElement("input");
       textField.type = "text";
       textField.id = "anyAddition";
       textField.name = "anyAddition";
       textField.placeholder = "Comments";
       textField.required = true;
+      textField.style.display = "block";
       textFieldContainer.appendChild(textField);
       
       var label = document.createElement("label");
       label.htmlFor = "anyAddition";
       label.innerHTML = "Any Additional Instruction?*";
+      
       textFieldContainer.appendChild(label);
+      textFieldContainer.appendChild(br);
     } else {
       textFieldContainer.removeChild(document.getElementById("anyAddition"));
       textFieldContainer.removeChild(document.getElementById("label-anyAddition"));
@@ -535,16 +539,19 @@ selection.addEventListener('change', () => {
     newText = document.createTextNode(selectedText.toString());
     newCell.appendChild(newText);
     newCell = newRow.insertCell(13);
-    newText = document.createTextNode(selectedDrink.toString());
-    newCell.appendChild(newText);
-    newCell = newRow.insertCell(14);
     newText = document.createTextNode(anyAddition.value);
     newCell.appendChild(newText);
+    //newCell = newRow.insertCell(14);
+    //newText = document.createTextNode();
+    //newCell.appendChild(newText);
     // newCell = newRow.insertCell(15);
     // newText = document.createTextNode(option.value);
     // newCell.appendChild(newText);
     
     myForm.reset();
+    //textFieldContainer.style.display="none";
+    //checkboxContainer.style.display="none";
+    
     selectedTitle = "";
     selectedChannel = [];
 
