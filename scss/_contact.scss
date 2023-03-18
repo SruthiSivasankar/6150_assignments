@@ -1,0 +1,212 @@
+@import 'mixins';
+#contact {
+    background-color: #eafbff;
+    padding: 80px 0;
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      color: #333;
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .col-md-6 {
+        width: 48%;
+      }
+  
+      .contact-info {
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+  
+          li {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+  
+            i {
+              margin-right: 10px;
+              font-size: 24px;
+              color: #333;
+              vertical-align: middle;
+            }
+          }
+  
+          .social-icons {
+            a {
+              display: inline-block;
+              margin-right: 10px;
+              color: #333;
+              font-size: 24px;
+              transition: all 0.3s ease-in-out;
+  
+              &:hover {
+                color: #e74c3c;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-form {
+        flex-basis: 45%;
+  
+        h2 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+  
+        // form {
+        //   input,
+        //   textarea {
+        //     @include set-background(#f2f2f2);
+        //     width: 100%;
+        //     padding: 15px;
+        //     margin-bottom: 30px;
+        //     border: none;
+        //     border-radius: 10px;
+        //     // background-color: #f2f2f2;
+        //     // color: #333;
+  
+        //     &:focus {
+        //       outline: none;
+        //       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        //     }
+        //   }
+        %input-style {
+          @include set-background(#f2f2f2);
+          width: 100%;
+          padding: 15px;
+          margin-bottom: 30px;
+          border: none;
+          border-radius: 10px;
+          
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          }
+        }
+        
+        form {
+          input {
+            @extend %input-style;
+          }
+          
+          textarea {
+            @extend %input-style;
+          }
+        }
+        
+  
+          textarea {
+            height: 150px;
+            resize: none;
+          }
+  
+          button[type="submit"] {
+            background-color: #3662db;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+  
+            &:hover {
+              background-color: #333;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .contact-info {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+  
+      .contact-form {
+        flex-basis: 100%;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      padding: 40px 0 ;
+  
+      .contact-info {
+        margin-bottom: 30px;
+  
+        h3 {
+          font-size: 20px;
+        }
+  
+        p {
+          font-size: 14px;
+        }
+      }
+  
+      .contact-form {
+        margin-bottom: 20px;
+  
+        form {
+          input,
+          textarea {
+            font-size: 14px;
+          }
+  
+          input[type="submit"] {
+            padding: 8px 20px;
+          }
+  
+          textarea {
+            height: 150px;
+          }
+        }
+      }
+    }
+
+  
+    @media screen and (max-width: 576px) {
+      .contact-info {
+        h3 {
+          font-size: 18px;
+        }
+  
+        p {
+          font-size: 12px;
+        }
+      }
+  
+      .contact-form {
+        form {
+          input,
+          textarea {
+            font-size: 12px;
+          }
+  
+          input[type="submit"] {
+            padding: 8px 12px;
+          }
+  
+          textarea {
+            height: 120px;
+          }
+        }
+      }
+    }
+  

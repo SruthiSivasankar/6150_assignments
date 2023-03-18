@@ -1,0 +1,23 @@
+//variables
+$light-color: white;
+$primary-color: purple;
+$secondary-color: rgb(69, 80, 233);
+$font-stack: Arial, Helvetica, sans-serif;
+$property: text;
+
+//function 
+$primary-color: #fff;
+@function set-text-color($color){
+    @if(lightness($color)>70){
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}
+
+//mixin
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}
